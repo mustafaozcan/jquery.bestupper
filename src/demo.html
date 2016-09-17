@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jquery.bestupper.js demo page (Mustafa OZCAN)</title>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+
+    <script src="jquery.bestupper.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.bestupper').bestupper({ ln: 'tr'}); 
+        });
+    </script>
+
+    <style type="text/css">
+        html *
+        {
+            font-family: Tahoma, "Trebuchet MS" , Verdana;
+            font-size: 11px;
+            color: #3d3d3d;
+        }
+        body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .baslik
+        {
+            background-color: #6b8e23;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px;
+        }
+        .tdmetin
+        {
+            background-color: #dcdcdc;
+            color: #00008b;
+            font-weight: bold;
+            padding: 5px;
+        }
+        .code
+        {
+            background-color: #EEEEEE;
+            border: 1px solid #CCCCCC;
+            padding: 5px;
+            width: 400px;
+        }
+        .bestupper
+        {
+            border: 1px solid gray;
+            color: Red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+   
+    <table>
+        <tr>
+            <td colspan="2" class="baslik">jquery.bestupper.js demo page</td>
+        </tr>
+        <tr>
+            <td class="tdmetin">input</td>
+            <td>
+                <input type="text" id="txtInput" class="bestupper" /></td>
+        </tr>
+		<tr>
+                <td class="tdmetin">input (maxlength=10)</td>
+                <td>
+                    <input type="text" id="txtInput1" class="bestupper" maxlength="10" /></td>
+        </tr>
+        <tr>
+            <td class="tdmetin">textarea (maxlength=20)</td>
+            <td>
+                <textarea cols="50" rows="10" id="txtArea" class="bestupper" maxlength="20"></textarea>
+            </td>
+        </tr>
+    </table>
+    <br />
+    You must add jquery.min.js and jquery.bestupper.min.js in your code like this :
+    <br />
+    <br />
+    <div class="code">
+        &#60;script src="jquery.min.js" type="text/javascript"&#62; &#60;/script&#62;
+        <br />
+        &#60;script src="jquery.bestupper.min.js" type="text/javascript"&#62; &#60;/script&#62;
+    </div>
+    <br />
+    <div class="code">
+        &#60;script type="text/javascript"&#62;
+        <br />
+        $(document).ready(function() {
+        <br />
+        &nbsp;&nbsp; $(&#39;.bestupper&#39;).bestupper();
+        <br />
+        });
+        <br />
+        &#60;/script&#62;
+    </div>
+    <br />
+    <br />
+    Finally you must set class property to "bestupper" for each control.<br />
+    <div class="code">
+        &#60;input type="text" id="txtInput" class="bestupper" / &#62;
+        <br />
+        &#60;textarea id="Textarea1" class="bestupper"&#62;&#60;/textarea &#62;
+    </div>
+    <br />
+    <br />
+    There are tree option in this plugin.
+    <br />
+    <br />
+    <b>Option 1 </b>= ln:'en'<br />
+    Default is &#39;en&#39;. It is suport English and Turkish.
+    <br />
+    If you are using Turkish keyboard you must set this option to &#39;tr&#39; like this
+    <br />
+    <div class="code">
+        &#60;script type="text/javascript"&#62;<br />
+        $(document).ready(function() {
+        <br />
+        &nbsp;&nbsp; $('.bestupper').bestupper({
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp; ln: 'tr&#39;<br />
+        &nbsp;&nbsp; });
+        <br />
+        });
+        <br />
+        &#60;/script&#62;
+    </div>
+    <br />
+    <br />
+    <b>Option 2 </b> = clear:true
+    <br />
+    Default value is true. This option clear whitespaces and try to upper (for pasted text) when exiting the control in blur event.
+    <br />
+    If you don&#39;t want
+    it ser clear option to false. If this option is false the bestupper plug in don&#39;t bind blur even to control.     <br />
+    <br />
+    <div class="code">
+        &#60;script type="text/javascript"&#62;<br />
+        $(document).ready(function() {
+        <br />
+        &nbsp;&nbsp; $('.bestupper').bestupper({
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;clear:false<br />
+        &nbsp;&nbsp; });
+        <br />
+        });
+        <br />
+        &#60;/script&#62;
+    </div>
+    <br />
+    <br />
+    <b>Option 3 </b> = nospace:false
+    <br />
+    Default value is false.   
+	If you want to prevent enter space char you must use nospace:true
+    <br />
+    <br />
+    <div class="code">
+        &#60;script type="text/javascript"&#62;<br />
+        $(document).ready(function() {
+        <br />
+        &nbsp;&nbsp; $('.bestupper').bestupper({
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;nospace:true<br />
+        &nbsp;&nbsp; });
+        <br />
+        });
+        <br />
+        &#60;/script&#62;
+    </div>
+	
+    You can use other ways to access control and apply bestupper method like this:
+    <br />
+    <div class="code">
+        &#60;script type="text/javascript"&#62; 
+		<br>
+        $(document).ready(function() {
+        <br />
+        &nbsp;&nbsp; $('#txtInput&#39;).bestupper();
+        <br />
+        });
+        <br />
+        &#60;/script&#62;
+    </div>
+    
+      <br />
+    
+    <br />
+    
+     <a href ="https://github.com/mustafaozcan/jquery.bestupper" target="_blank">You can downlad plugin from github.com</a>
+	 <br> <br />
+	  This demo created by <a href="http://www.mustafaozcan.net">Mustafa OZCAN</a>
+	
+	
+</body>
+</html>
