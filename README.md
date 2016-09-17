@@ -1,7 +1,7 @@
 # jquery.bestupper
 jQuery Upper Case Plugin
 
-It converts char to upper case when typing.
+It converts char to uppercase when typing.
 
 ## Features
 - Auto convert char to uppercase when typing
