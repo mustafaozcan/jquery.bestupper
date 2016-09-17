@@ -1,7 +1,19 @@
 # jquery.bestupper
 jQuery Upper Case Plugin
 
+It converts char to upper case when typing.
 
+## Features
+- Auto convert char to uppercase when typing
+- Clear whitespaces
+- Prevent space char writing (optional)
+- Support for Turkish and English chars
+- Support for jQuery 2+ and 3+
+- Tested on browsers = Chrome, Firefox, IE9+ and Edge
+
+
+
+##Implementation
 You must add jquery.min.js and jquery.bestupper.min.js in your code like this : 
 ```
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"> </script> 
@@ -27,8 +39,10 @@ There are tree option in this plugin.
 
 Default is 'en'. 
 
-It is suport English and Turkish. 
-If you are using Turkish keyboard you must set this option to 'tr' like this 
+It suports English and Turkish chars (such as İ,Ğ,Ü,Ç,Ö,Ş). 
+
+If you want to use for Turkish chars you must set this option to 'tr' like this:
+
 ```
 <script type="text/javascript">
 $(document).ready(function() { 
@@ -82,4 +96,4 @@ $(document).ready(function() {
 </script>
 ```
 
-This project developed by [Mustafa OZCAN](http://www.mustafaozcan.net)
+Developed by [Mustafa OZCAN](http://www.mustafaozcan.net)
