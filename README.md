@@ -1,5 +1,5 @@
 # jquery.bestupper
-jQuery Upper Case Plugin
+jQuery UPPERCASE Plugin
 
 It converts char to uppercase when typing.
 
@@ -32,6 +32,7 @@ Finally you must set class property to "bestupper" for each control
 <input type="text" id="txtInput" class="bestupper" / > 
 <textarea id="Textarea1" class="bestupper"></textarea >
 ```
+##Options
 
 There are tree option in this plugin. 
 #### <i class="icon-pencil"></i> Option 1
