@@ -1,7 +1,6 @@
 
 /* Copyright (c) 2016 Mustafa OZCAN (http://www.mustafaozcan.net)
-* Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
-* and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
+* Released under the MIT license
 * Version: 2.0
 * Requires: jQuery 2.x
 */
